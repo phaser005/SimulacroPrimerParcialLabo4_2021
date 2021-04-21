@@ -1,0 +1,13 @@
+<table border=1>
+	<thead>
+		<th>Nombre</th>
+        <th>Mostrar</th> 
+	</thead>
+  <tbody>
+  	
+    <tr *ngFor="let pelicula of listadoPeliculas">
+        <td>{{pelicula.nombre}}</td>
+        <td><button class="button button1" (click)="mostrarDetalles(pelicula)"></button></td>
+     </tr>
+  </tbody> 
+</table>
